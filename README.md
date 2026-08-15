@@ -1,6 +1,6 @@
 # Smart-City Traffic + Energy Simulation
 
-Public portfolio companion for a traffic, energy, and realtime-systems project.
+Private portfolio companion for a traffic, energy, and realtime-systems project.
 
 This showcase presents the technical notes, simulation results, Unreal evidence, Python pipeline, AngelScript integration, and a browser-based replay viewer. The full Unreal project and its source assets are intentionally excluded.
 
@@ -19,6 +19,10 @@ The site is published from `docs/` with GitHub Pages. Open `docs/index.html` loc
 ## Public boundary
 
 The public repository contains portfolio material only: selected code, charts, screenshots, the demonstration video, written research, and replay data. It does not contain the Unreal project, maps, cooked content, private plugins, credentials, or private AYO infrastructure.
+
+## Studio control
+
+This repository is now a private MMKPC Studios showcase artifact for later integration into MMKProspects.com. The current access policy is in `LICENSE`, credential handling is in `SECURITY.md`, and the release gate is `scripts/validate_studio_manifest.ps1`.
 
 ## Local replay
 
