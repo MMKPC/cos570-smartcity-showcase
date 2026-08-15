@@ -1,8 +1,8 @@
 # Smart-City Traffic + Energy Simulation
 
-Public portfolio companion for the private `cos570-smartcity` project.
+Public portfolio companion for a traffic, energy, and realtime-systems project.
 
-This showcase presents the research, simulation results, Unreal evidence, Python pipeline, AngelScript integration, and a browser-based replay viewer. The full Unreal project and its source assets are intentionally excluded.
+This showcase presents the technical notes, simulation results, Unreal evidence, Python pipeline, AngelScript integration, and a browser-based replay viewer. The full Unreal project and its source assets are intentionally excluded.
 
 ## Open the showcase
 

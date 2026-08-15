@@ -10,8 +10,8 @@ Approach: sweep light-timing parameters, run the real simulation for each,
 record actual wait time and idle energy, then train a small decision tree
 regressor on the results, both to predict performance at untested settings
 (the "predictive model" learning outcome) and to pick the best setting
-found. Simple and explainable on purpose, this is a class project, not a
-production traffic system.
+found. Simple and explainable on purpose, this is a bounded technical
+prototype, not a production traffic system.
 """
 
 import numpy as np

@@ -1,5 +1,5 @@
-"""Visualization outputs. Task 5. matplotlib charts and a traffic-density
-vs energy-use heatmap, the example the assignment names directly."""
+"""Visualization outputs: matplotlib charts and a traffic-density versus
+energy-use heatmap for the technical showcase."""
 
 import matplotlib
 matplotlib.use("Agg")

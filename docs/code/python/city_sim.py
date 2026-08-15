@@ -1,6 +1,6 @@
-"""The actual discrete-event traffic simulation. Task 1 (environment) +
-Task 2 (flow-responsive lights), built on simpy per the assignment's own
-tool list.
+"""The discrete-event traffic simulation for the public technical showcase.
+The flow-responsive lights are built on simpy and use a small, explainable
+control surface.
 
 Cars arrive at each intersection approach on a random (Poisson) schedule,
 queue up, and are released one at a time while their axis has a green
