@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Smart City signal mark</title>
+  <rect width="64" height="64" rx="8" fill="#111820"/>
+  <path d="M11 48h42M16 48V26h10v22M38 48V16h10v32" fill="none" stroke="#f5f1e8" stroke-width="4"/>
+  <circle cx="21" cy="19" r="5" fill="#ff765f"/>
+  <circle cx="43" cy="10" r="5" fill="#62d2c3"/>
+</svg>

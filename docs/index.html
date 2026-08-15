@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A portfolio presentation of a smart-city traffic and energy simulation with Python, AngelScript, Unreal evidence, and a Three.js replay viewer.">
+  <title>Smart-City Traffic + Energy Simulation | MMKPC Studios</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#overview" aria-label="Smart-City project overview">MMKPC STUDIOS <span>/</span> COS570</a>
+    <nav aria-label="Primary navigation">
+      <a href="#overview">Overview</a>
+      <a href="#replay">Replay</a>
+      <a href="#evidence">Evidence</a>
+      <a href="#implementation">Implementation</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="overview">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">Advanced AI / systems simulation / Unreal study</p>
+        <h1>Smart-City Traffic + Energy Simulation</h1>
+        <p class="hero-lede">A decision system that learns traffic-light timing from simulation data, measures the tradeoff between wait time and energy demand, and replays the result as a living 3D city.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#replay">Launch the replay</a>
+          <a class="button button-quiet" href="assets/video/unreal_simulation_recording.mp4">Watch the Unreal capture</a>
+        </div>
+        <dl class="hero-stats" aria-label="Project results">
+          <div><dt>12.9%</dt><dd>wait-time improvement</dd></div>
+          <div><dt>46.48</dt><dd>cars released / minute</dd></div>
+          <div><dt>97.6%</dt><dd>delivered energy ratio</dd></div>
+          <div><dt>1.000</dt><dd>decision-tree R2</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section section-light project-intro">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow-dark">The project</p>
+        <h2>One logged system, three ways to see it.</h2>
+      </div>
+      <div class="intro-copy">
+        <p>The simulation models four intersections and four energy zones. Python runs the discrete-event world, trains the optimizer, and writes the evidence. AngelScript carries the data and loop concepts toward Unreal. Three.js gives the result a direct, inspectable replay surface.</p>
+        <p class="muted">The browser viewer is deliberately a replay, not a second simulation. It consumes the same logged output that produced the charts.</p>
+      </div>
+    </section>
+
+    <section class="section section-dark results-section">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Observed results</p>
+          <h2>Optimization with a visible trail.</h2>
+        </div>
+        <p class="section-note">The numbers below come from the verified run packaged with this showcase.</p>
+      </div>
+      <div class="metric-grid">
+        <article class="metric"><strong>4.09s</strong><span>optimized average wait</span><small>4.69s baseline</small></article>
+        <article class="metric"><strong>8.89s</strong><span>95th percentile wait</span><small>Task 6 measurement</small></article>
+        <article class="metric"><strong>231.65 kWh</strong><span>automated energy shed</span><small>24-hour model</small></article>
+        <article class="metric"><strong>4</strong><span>intersections and energy zones</span><small>shared city layout</small></article>
+      </div>
+      <div class="chart-grid">
+        <figure><img src="assets/charts/traffic_vs_energy.png" alt="Traffic and energy comparison chart"><figcaption>Traffic flow and energy demand</figcaption></figure>
+        <figure><img src="assets/charts/optimization_landscape.png" alt="Optimization landscape chart"><figcaption>Parameter sweep and decision boundary</figcaption></figure>
+        <figure><img src="assets/charts/wait_time_comparison.png" alt="Baseline and optimized wait time comparison"><figcaption>Baseline versus optimized wait time</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section section-light replay-section" id="replay">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow eyebrow-dark">Interactive artifact</p>
+          <h2>Replay the optimized city.</h2>
+        </div>
+        <a class="text-link" href="viewer/index.html">Open replay full screen <span aria-hidden="true">-&gt;</span></a>
+      </div>
+      <div class="replay-frame">
+        <iframe src="viewer/index.html" title="Interactive Three.js smart-city replay" loading="lazy"></iframe>
+      </div>
+      <p class="caption">Orbit the city, watch the signal states change, and follow the released vehicles. The viewer reads `data/light_schedule.json` and does not invent a new result.</p>
+    </section>
+
+    <section class="section section-dark film-section">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Unreal evidence</p>
+          <h2>The same idea in a world view.</h2>
+        </div>
+        <p class="section-note">A captured project view accompanies the academic and simulation evidence.</p>
+      </div>
+      <video controls preload="metadata" poster="assets/evidence/ue_scene_01.jpg">
+        <source src="assets/video/unreal_simulation_recording.mp4" type="video/mp4">
+        Your browser does not support the embedded video. <a href="assets/video/unreal_simulation_recording.mp4">Open the capture</a>.
+      </video>
+    </section>
+
+    <section class="section section-light evidence-section" id="evidence">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow-dark">Evidence wall</p>
+        <h2>From code output to scene proof.</h2>
+      </div>
+      <div class="evidence-grid">
+        <figure><img src="assets/evidence/ue_scene_01.jpg" alt="Smart-city scene with traffic signals and buildings"><figcaption>City scene and signal layout</figcaption></figure>
+        <figure><img src="assets/evidence/ue_scene_02.jpg" alt="Second Unreal smart-city scene view"><figcaption>World-state view</figcaption></figure>
+        <figure><img src="assets/evidence/ue_scene_03.jpg" alt="Third Unreal smart-city scene view"><figcaption>Runtime composition</figcaption></figure>
+        <figure><img src="assets/evidence/ue_scene_04_debug_board.jpg" alt="Unreal debug board showing simulation data"><figcaption>Debug board and readback</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section section-light implementation-section" id="implementation">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow eyebrow-dark">Implementation</p>
+          <h2>Python for the model. AngelScript for the bridge.</h2>
+        </div>
+        <a class="text-link" href="code/">Browse selected source <span aria-hidden="true">-&gt;</span></a>
+      </div>
+      <div class="implementation-grid">
+        <article>
+          <span class="label">Python</span>
+          <h3>Simulate, optimize, measure.</h3>
+          <p>The Python layer owns city layout, traffic arrivals, light control, energy demand, parameter sweeps, metrics, and the JSON replay contract.</p>
+          <a class="text-link" href="code/python/">View Python files <span aria-hidden="true">-&gt;</span></a>
+        </article>
+        <article>
+          <span class="label label-accent">AngelScript</span>
+          <h3>Carry the system into Unreal.</h3>
+          <p>Small Unreal-facing examples describe the data profile and loop director without exposing the private Unreal project or its content assets.</p>
+          <a class="text-link" href="code/angelscript/">View AngelScript files <span aria-hidden="true">-&gt;</span></a>
+        </article>
+        <article>
+          <span class="label label-warm">Three.js</span>
+          <h3>Make the evidence inspectable.</h3>
+          <p>The viewer is a transparent presentation layer over recorded simulation output, built for direct inspection in a browser.</p>
+          <a class="text-link" href="viewer/index.html">Open the viewer <span aria-hidden="true">-&gt;</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-ink closing-section">
+      <div>
+        <p class="eyebrow">Public boundary</p>
+        <h2>A portfolio window, not the whole workshop.</h2>
+      </div>
+      <p>The Unreal project, maps, cooked content, private plugins, and internal AYO infrastructure remain outside this public artifact. This page shows the reasoning, evidence, and result without handing over the production project.</p>
+      <a class="button button-primary" href="downloads/COS570_Signature_Article_Mitchell.pdf">Read the signature article</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>MMKPC Studios / COS570 Smart-City Study</span>
+    <span>Public portfolio artifact / <span id="year"></span></span>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

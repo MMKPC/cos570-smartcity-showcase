@@ -1,0 +1,21 @@
+{
+ "optimizer": {
+  "fit_r2": 1.0,
+  "best_min_green": 3.0,
+  "best_max_green": 20.0,
+  "default_avg_wait_s": 4.6897066721827825,
+  "optimized_avg_wait_s": 4.085577170738483,
+  "wait_improvement_pct": 12.882031727649887
+ },
+ "traffic": {
+  "avg_wait_s": 3.966328624263897,
+  "p95_wait_s": 8.891155544281373,
+  "throughput_per_min": 46.48147714295929
+ },
+ "energy": {
+  "avg_load_kw": 96.72951982612024,
+  "total_shed_kwh": 231.65376170237838,
+  "peak_load_kw": 158.56848622548236,
+  "delivered_ratio_pct": 97.56607098429998
+ }
+}
