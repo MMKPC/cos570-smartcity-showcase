@@ -1,6 +1,6 @@
 # Security and Credential Policy
 
-This is a private MMKPC Studios showcase repository.
+This is a public MMKPC Studios showcase repository. The original production repository remains private.
 
 - Never commit API keys, access tokens, passwords, private keys, certificates, or machine-specific secret files.
 - Use environment variables or a local secret manager for runtime credentials.

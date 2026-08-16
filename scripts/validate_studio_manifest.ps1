@@ -7,7 +7,7 @@ $required = 'schema_version', 'studio', 'project_id', 'repository', 'visibility'
 foreach ($field in $required) {
     if ($null -eq $manifest.$field -or [string]::IsNullOrWhiteSpace([string]$manifest.$field)) { throw "Manifest field is missing: $field" }
 }
-if ($manifest.visibility -ne 'private') { throw "Manifest visibility must be private. Found: $($manifest.visibility)" }
+if ($manifest.visibility -ne 'public-showcase') { throw "Manifest visibility must be public-showcase. Found: $($manifest.visibility)" }
 if ($manifest.credentials.included -ne $false) { throw 'Manifest credentials.included must be false.' }
 
 $patterns = @('ghp_[A-Za-z0-9]{20,}', 'github_pat_[A-Za-z0-9_]{20,}', 'sk-[A-Za-z0-9]{20,}', 'xox[baprs]-[A-Za-z0-9-]{20,}', 'AKIA[0-9A-Z]{16}', '-----BEGIN (RSA|OPENSSH|EC|DSA|PGP) PRIVATE KEY-----', '(?i)(api[_-]?key|access[_-]?token|client[_-]?secret|password)\s*[:=]\s*["'']?(?!example|placeholder|changeme|your_|<)[A-Za-z0-9_./+=-]{12,}')

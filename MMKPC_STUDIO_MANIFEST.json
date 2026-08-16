@@ -4,9 +4,9 @@
   "portfolio_destination": "MMKProspects.com",
   "project_id": "smart-city-traffic-energy",
   "repository": "MMKPC/smart-city-traffic-energy-showcase",
-  "repository_class": "private-showcase",
-  "visibility": "private",
-  "public_release": false,
+  "repository_class": "public-showcase",
+  "visibility": "public-showcase",
+  "public_release": true,
   "access_policy": "MMKPC Studios Proprietary Showcase License 1.0",
   "third_party_materials": "Remain governed by their original licenses.",
   "credentials": {
@@ -16,6 +16,6 @@
   },
   "verification": {
     "validator": "scripts/validate_studio_manifest.ps1",
-    "required_checks": ["manifest-schema", "credential-pattern-scan", "private-repository-visibility"]
+    "required_checks": ["manifest-schema", "credential-pattern-scan", "public-showcase-boundary"]
   }
 }
